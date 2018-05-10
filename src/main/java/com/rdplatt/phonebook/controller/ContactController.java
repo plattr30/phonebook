@@ -15,7 +15,7 @@ import java.util.List;
 public class ContactController {
 
     @Autowired
-    ContactRepository contactRepository;
+    private ContactRepository contactRepository;
 
     @GetMapping("/contact")
     public Iterable<Contact> getAllContacts() {
