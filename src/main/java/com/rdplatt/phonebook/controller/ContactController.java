@@ -17,12 +17,12 @@ public class ContactController {
     @Autowired
     private ContactRepository contactRepository;
 
-    @GetMapping("/contact")
+    @GetMapping("/contacts")
     public Iterable<Contact> getAllContacts() {
         return contactRepository.findAll();
     }
 
-    @PostMapping("/contact")
+    @PostMapping("/contacts")
     public Contact create(@Valid @RequestBody Contact contact) {
         return contactRepository.save(contact);
     }
