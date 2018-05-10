@@ -2,7 +2,7 @@
 
 angular.module('myApp').factory('ContactService', ['$http', '$q', function($http, $q){
 
-    var REST_SERVICE_URI = '/contacts';
+    var REST_SERVICE_URI = '/contacts/';
 
     var factory = {
         fetchAllContacts: fetchAllContacts,
